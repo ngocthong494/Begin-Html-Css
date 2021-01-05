@@ -1,0 +1,131 @@
+html {
+    background-color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+a:focus {
+    font-style: italic;
+}
+ 
+/* header */
+
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: linear-gradient( 30deg ,  #f6bb73 0%, #f6bb73 3%, white 25% , white 75%, #f6bb73 97%, #f6bb73 100%);
+}
+
+header img {
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    margin: 0px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    margin: 0px;
+}
+
+header em {
+    text-shadow: 1.2px 1.2px #800000 ;
+}
+
+/* main */
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main div {
+    border: 1px solid black;
+    margin: 0px;
+    box-shadow: 4px 5px 8px gray;
+    margin-bottom: 8px;
+}
+
+main h1 {
+    font-size: 150%;
+    border-style: double;
+    border-color: #800000;
+    border-radius: 10px;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 50px;
+    margin: 16px 26px;
+    box-shadow: 4px 5px black;
+}
+
+main .style {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0px;
+}
+
+main h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+main img {
+    padding-bottom: 1em;
+    margin: 0px;
+}
+
+main p {
+    padding-bottom: .5em;
+    margin: 0px;
+}
+
+main blockquote {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-style: italic;
+    margin: 0px;
+}
+
+main ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+    margin: 0px;
+}
+
+main li {
+    padding-bottom: .35em;
+    margin 0px;
+}
+
+/* footer */
+footer {
+    background-color: #931420;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0px;
+}
