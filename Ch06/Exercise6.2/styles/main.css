@@ -5,10 +5,20 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+}
+
+section {
+    width: 525px;
+    float: right;
+}
+
+aside {
+    width: 215px;
+    float: right;
 }
 
 a:hover {
@@ -52,67 +62,94 @@ header em {
 
 /* main */
 
-main {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-main h1 {
-    font-size: 150%;
-    border-top: 3px solid #931420 ;
-    border-bottom: 3px solid #931420 ;
-    padding-top: .3em;
-    padding-bottom: .3em;
-}
-
-main .style, main img, main p, main blockquote, main ul, main li {
+main h2, main h3, main img, main p, main blockquote, main ul, main li {
     margin: 0px;
 }
 
-main .style {
+/* main aside */
+
+main aside {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+aside h2 {
+    font-size: 100%;
+    margin: 0px;
+
+}
+
+aside h2#aside_1 {
+    font-size: 130%;
+    color: #800000;
+    padding: 10px 0px;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+/* main section */
+
+main section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0px;
+}
+
+section article {
+    padding: .5em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000 ;
+}
+
+section article img {
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid black;
+}
+
+article p#article_1 {
+    padding: .5em 0;
+}
+
+section h2 {
     font-size: 130%;
     color: #800000;
     padding-top: .5em;
     padding-bottom: .25em;
-    /* margin: 0px; */
 }
 
-main h2 {
-    margin-top: 0px;
-    margin-bottom: 10px;
+section h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
 }
 
-main img {
-    padding-bottom: 1em;
-    /* margin: 0px; */
-}
-
-main p {
-    padding-bottom: .5em;
-    /* margin: 0px; */
-}
-
-main blockquote {
-    padding-left: 2em;
-    padding-right: 2em;
+section blockquote {
+    padding: .75em 2em;
     font-style: italic;
-    /* margin: 0px; */
 }
 
-main ul {
+section ul {
     padding-bottom: .25em;
     padding-left: 1.25em;
-    /* margin: 0px; */
 }
 
-main li {
+section li {
     padding-bottom: .35em;
-    /* margin 0px; */
 }
 
 /* footer */
 footer {
     background-color: #931420;
+    clear: both;
 }
 
 footer p {

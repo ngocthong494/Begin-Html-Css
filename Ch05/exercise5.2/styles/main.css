@@ -76,12 +76,16 @@ main h1 {
     box-shadow: 4px 5px black;
 }
 
+main .style, main img, main p, main blockquote, main ul, main li {
+    margin: 0px;
+}
+
 main .style {
     font-size: 130%;
     color: #800000;
     padding-top: .5em;
     padding-bottom: .25em;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 main h2 {
@@ -91,30 +95,30 @@ main h2 {
 
 main img {
     padding-bottom: 1em;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 main p {
     padding-bottom: .5em;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 main blockquote {
     padding-left: 2em;
     padding-right: 2em;
     font-style: italic;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 main ul {
     padding-bottom: .25em;
     padding-left: 1.25em;
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 main li {
     padding-bottom: .35em;
-    margin 0px;
+    /* margin 0px; */
 }
 
 /* footer */
