@@ -5,25 +5,22 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 99%;
-    max-width: 960px;
+    width: 800px;
     margin: 0 auto;
-    border-left: 3px solid #931420;
-    border-right: 3px solid #931420;
+    border: 3px solid #931420;
     background-color: #fffded;
 }
 
 main section {
-    width: 57.2916%;
-    padding-left: 4.16%;
-    padding-right: 4.16%;
+    width: 495px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 20px;
     float: right;
 }
-
 main aside {
-    width: 30.215%;
-    padding-left: 4.16%;
+    width: 255px;
+    padding-left: 15px;
     padding-bottom: 20px;
     float: right;
 }
@@ -47,8 +44,8 @@ header {
 
 header img {
     float: left;
-    padding-right: 3.125%;
-    padding-left: 3.125%;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 header h2 {
@@ -69,19 +66,11 @@ header em {
 /* Nav_menu */
 /* The styles for the operation of the 3-tier navigation menu */
 #nav_menu ul {
-    display: flex;
-    margin: 0;
-	padding: 0;
 	list-style: none;
 	position: relative;    /* So the first submenu can be positioned within the main menu */
 }
 #nav_menu ul li {
-    flex-basis: 17.5%;
-    /* width: 20%;
-	float: left; */
-}
-#nav_menu ul li.item {
-    flex-basis: 30%;
+	float: left;
 }
 #nav_menu ul ul {
 	display: none;         /* Don't display submenu until hover of the li element */
@@ -89,12 +78,10 @@ header em {
 	top: 100%;             /* Position the submenu at the bottom of the main menu */
 }
 #nav_menu ul ul li {
-    width: 111%;
 	float: none;           /* Display the submenus vertically */
 	position: relative;    /* So the second submenu can be positioned within the first submenu */
 }
 #nav_menu ul ul li ul {
-    width: 91%;
 	position: absolute;
 	left: 100%;            /* Position the second submenu at the right side of the li element */ 
 	top: 0;                /* Position the second submenu at the top of the li element */
@@ -114,18 +101,23 @@ header em {
 }
 
 /* The styles for the formatting of the 3-tier navigation menu */
- 
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
 #nav_menu ul li a {
 	text-align: center;
-    display: block;
-    /* width: 192px; */
+	display: block;
+	width: 160px;
 	padding: 1em 0;
 	text-decoration: none;
 	background-color: #800000;
 	color: white;
 	font-weight: bold;
 }
-
+#nav_menu ul li a.lastitem {
+	width: 178px;               /* So the menu fills the 706px width of the page */
+}
 #nav_menu ul li a.current {
 	color: yellow;
 }
@@ -142,6 +134,11 @@ main h2, main h3, main img, main p, main blockquote, main ul, main li {
 }
 
 /* main aside */
+
+main aside {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 
 aside h2 {
     font-size: 100%;
@@ -161,7 +158,9 @@ aside img {
 
 /* main section */
 
-
+section{
+    grid-area: sec;
+}
 section h1 {
     font-size: 150%;
     padding-top: .5em;
@@ -169,48 +168,56 @@ section h1 {
     margin: 0px;
 }
 
-section article {
-    padding: .5em 0;
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000 ;
-}
-
-section article img {
-    max-width: 40%;
-    min-width: 150px;
-    float: right;
-    margin: 1em 0 1em 1em;
-    border: 1px solid black;
-}
-
-article p#article_1 {
-    padding: .5em 0;
-}
-
-section h2 {
-    font-size: 130%;
+section h1{
     color: #800000;
-    padding-top: .5em;
-    padding-bottom: .25em;
 }
-
-section h3 {
-    font-size: 105%;
-    padding-bottom: .25em;
+fieldset{
+    margin-bottom: 10px;
 }
-
-section blockquote {
-    padding: .75em 2em;
-    font-style: italic;
+legend{
+    color: black;
+    font-weight: bold;
 }
-
-section ul {
-    padding-bottom: .25em;
-    padding-left: 1.25em;
+label{
+    float: left;
+    width: 10em;
+    text-align: right;
 }
-
-section li {
-    padding-bottom: .35em;
+input{
+    margin-bottom: 7px;
+    margin-left: 2em;
+    width: 15em;
+}
+select{
+    margin-bottom: 7px;
+    margin-left: 2em;
+    width: 15.6em;
+}
+label[for=billme]{
+    width: 5em;
+}
+label[for=creditcard]{
+    width: 7em;
+}
+#billme, #creditcard{
+    width: 2em;
+    float: left;
+    margin-right: -2em;
+    margin-left: 5.5em;
+}
+#month{
+    width: 7em;
+}
+#year{
+    width: 5em;
+}
+#submit{
+    width: 9em;
+    margin-left: 14em; 
+}
+#reset{
+    width: 9em;
+    margin-left: 1em;
 }
 
 /* footer */
@@ -225,86 +232,4 @@ footer p {
     padding-bottom: 1em;
     padding-top: 1em;
     margin: 0px;
-}
-
-#mobile_menu {
-    background-color: #800000;
-    display: none;
-}
-
-/* Add a media query for a tablet in portrait view  */
-
-@media only screen and (max-width: 959px) {
-
-   section h1 {
-       font-size: 135%;
-   }
-
-   section h2 {
-       font-size: 120%;
-   }
-
-   aside h2 {
-       font-size: 120%;
-   }
-
-}
-
-
-/* Add a media query for a phone in landscape orientation  */
-/* mobile landscap to tablet portrail */
-@media only screen and (max-width: 767px) {
-
-
-    header img {                  /* header */
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-
-    header h2, header h3 {
-        text-align: center;
-    }
-
-    main section {                   /* section */
-        float: none;
-        width: 91.68%;
-    }
-    section article img {
-        max-width: 30%;
-    }
-
-    main aside {                     /* aside */
-        float: none;
-        width: 95.84%;
-        padding-right: 4.16%;
-    }
-     
-    main aside div {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-
-}
-
-/* Add a media query for a phone in portrait orientation  */
-@media only screen and (max-width: 479px) { 
-
-    body {
-        font-size: 90%;
-    }
-
-    #nav_menu {                 /* nav_menu */
-        display: none;
-    }
-
-    #mobile_menu {
-    display: block;
-    }
-
-    .slicknav_menu {
-        background-color:#800000 !important;
-    }
-
 }

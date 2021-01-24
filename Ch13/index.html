@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../Ch13/image/favicon.gif">
+        <title>San Joaquin Valley Town Hall</title>
+        <link rel="stylesheet" href="../Ch13/styles/main.css">
+    </head>
+    <body>
+        <header>
+            <img src="../Ch13/image/favicon.gif" alt="Town Hall Logo" height="80">
+                <h2>San Joaquin Valley Town Hall</h2>
+                <h3>Celebrating our <em>75<sup>th</sup></em> Year</h3>
+        </header>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="../Ch13/index.html" class="current">Home</a></li>
+                <li><a href="#">Speaker</a>
+                    <ul>
+                        <li><a href="#">Jeffrey Toobin</a></li>
+                        <li><a href="#">Andrew Ross Sorkin</a></li>
+                        <li><a href="#">Amy Chua</a></li>
+                        <li><a href="../Ch13/speakers/Sampson.html">Scott Sampson</a>
+                            <ul>
+                                <li><a href="#">September 2010</a></li>
+                                <li><a href="#">February 2015</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Carlos Eire</a></li>
+                        <li><a href="#">Roman Tynan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Luncheons</a></li>
+                <li><a href="member.html">Become a Member</a></li>
+                <li class="lastitem"><a href="aboutus.html">About Us</a>
+                    <ul>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Board of Derectors</a></li>
+                        <li><a href="#">Past Speakers</a>
+                            <ul>
+                                <li><a href="#">2014</a></li>
+                                <li><a href="#">2013</a></li>
+                                <li><a href="#">2012</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+
+                <h1>Order Form</h1>
+                <form action="">
+                    <fieldset>
+                        <legend>Member information</legend>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" name="email" id="email" autofocus required><br>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" required><br>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" required><br>
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address"><br>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city" required><br>
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state" required placeholder="2-character code"><br>
+                        <label for="zipcode">ZIP code:</label>
+                        <input type="number" name="zipcode" id="zipcode" required pattern="\d{5}(\d{9})?" title="Nhập 5 hoặc 9 kí tự" placeholder="5 or 9 digits"><br>
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="tel" name="phonenumber" id="phonenumber" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Nhập đúng định dạng"  placeholder="999-999-9999">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Ordering information</legend>
+                        <label for="ordertype">Order Type:</label>
+                        <select name="ordertype" id="ordertype">
+                            <option value="">Member Package</option>
+                            <option value="">Member Package 1</option>
+                        </select><br>
+                        <label for="numbertickets">Number of Tickets:</label>
+                        <input type="number" name="numbertickets" id="numbertickets" required><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Method</legend>
+                        <input type="radio" name="billme" id="billme" required>
+                        <label for="billme">Bill Me</label>
+                        <input type="radio" name="creditcard" id="creditcard" required>
+                        <label for="creditcard">Credit Card</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Credit Card information</legend>
+                        <label for="cardtype">Card Type:</label>
+                        <select name="cardtype" id="cardtype">
+                            <option value="">Visa</option>
+                            <option value="">Visa 1</option>
+                        </select><br>
+                        <label for="numbertickets">Card Number:</label>
+                        <input type="number" name="cardnumber" id="cardnumber" required pattern="\d{16}" title="nhap du 16 so" placeholder="16 digits"><br>
+                        <label for="expiration">Expiration date:</label>
+                        <select name="month" id="month">
+                            <option value="">January</option>
+                            <option value="">January 1</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="">2017</option>
+                            <option value="">2018</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Submit Your Order</legend>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                        <input type="reset" name="reset" id="reset" value="Reset Fields">
+                    </fieldset>
+                </form>
+
+            </section>
+
+            <aside>
+                <h2 id="aside_1">Guest speakers</h2>
+                <h2>October<br><a href="../Ch13/speakers/toobin.html">Jeffrey Toobin</a></h2>
+                <img src="../Ch13/image/toobin75.jpg" alt="Jeffrey Toobin" height="75">
+                <h2>November<br><a href="../Ch13/speakers/sorkin.html">Andrew Ross Sorkin</a></h2>
+                <img src="../Ch13/image/sorkin75.jpg" alt="Andrew Ross Sorkin" height="75">
+                <h2>January<br><a href="../Ch13/speakers/chua.html">Amy Chua</a></h2>
+                <img src="../Ch13/image/chua75.jpg" alt="Amy Chua" height="75">
+                <h2>February<br><a href="../Ch13/speakers/Sampson.html">Scott Sampson</a></h2>
+                <img src="../Ch13/image/sampson75.jpg" height="75">
+            </aside>
+
+        </main>
+
+        <footer> 
+            <p>&copy;2015. San Joaquin Valley Town Hall, Fresno. CA 93755</p>
+        </footer>
+
+    </body>
+</html>
